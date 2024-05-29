@@ -2,6 +2,7 @@
 
 #DRAFT! created by AI
 models and notebook names all subject to change
+
 This repository contains the data and code used to predict beer and food pairings. The project is based on two papers:
 1.	Schreurs, Michiel, et al. "Predicting and improving complex beer flavor through machine learning." Nature Communications 15.1 (2024): 2368.
 2.	Park, Donghyeon, et al. "FlavorGraph: a large‐scale food‐chemical graph for generating food representations and recommending food pairings." Scientific Reports 11.1 (2021): 931.
