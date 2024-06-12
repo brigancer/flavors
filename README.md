@@ -1,8 +1,7 @@
-# flavors
+# Lessons in Chemisty and Beer Pairing
 
-#DRAFT! created by AI
-
-models and notebook names all subject to change
+Project Overview
+This project aims to develop a machine-learning model that can recommend personalized beer and food pairings based on the chemical properties of beers and the flavor profiles of foods. The model leverages insights from two key research papers:
 
 This repository contains the data and code used to predict beer and food pairings. The project is based on two papers:
 	
@@ -11,29 +10,18 @@ This repository contains the data and code used to predict beer and food pairing
 	2. Park, Donghyeon, et al. "FlavorGraph: a large‐scale food‐chemical graph for generating food representations and recommending food pairings." Scientific Reports 11.1 (2021): 931.
 
 
-The first paper, Schreurs et al. (2024), uses machine learning to predict beer flavor and consumer appreciation from the chemical properties of the beer. The authors collected data on 250 commercial Belgian beers, including their chemical composition, sensory attributes (as assessed by a trained tasting panel), and consumer reviews. They then trained a variety of machine learning models to predict sensory attributes and consumer appreciation from the chemical data. The best-performing model was a Gradient Boosting Regression model, which was able to accurately predict consumer appreciation.
+Schreurs et al. (2024): This study used machine learning to predict beer flavor and consumer appreciation from the chemical composition of beers. It analyzed 250 commercial Belgian beers, measuring over 200 chemical properties and incorporating sensory analysis from a trained tasting panel and over 180,000 consumer reviews. The study found that a Gradient Boosting Regression model could accurately predict consumer appreciation and identified specific compounds as drivers of beer flavor.
 
-The second paper, Park et al. (2021), introduces FlavorGraph, a large-scale graph network of food ingredients and chemical compounds. The authors used a graph embedding method to learn food representations from FlavorGraph. These food representations were then used to recommend food pairings. The authors showed that their method outperformed other methods in a node clustering task, which involves categorizing features of food.
+Park et al. (2021): This study introduced FlavorGraph, a large-scale graph network of food ingredients and chemical compounds. The graph was constructed using data from food databases and recipe co-occurrence information. The authors used a graph embedding method called metapath2vec to learn food representations that capture both chemical similarity and recipe co-occurrence information. These representations were then used to recommend food pairings.
 
-This project will use the data and methods from both papers to predict beer-food pairings. The data from Schreurs et al. (2024) will be used to train a model to predict beer flavor from chemical data. The data from Park et al. (2021) will be used to train a model to predict food pairings from food representations. These two models will then be combined to predict beer-food pairings.
+By combining the chemical data from Schreurs et al. (2024) with the FlavorGraph representations from Park et al. (2021), this project aims to create a model that can suggest beer-food pairings that are both chemically compatible and likely to be enjoyed by consumers.
 
-The code for this project is written in Python. The main libraries used are scikit-learn, XGBoost, and PyTorch. The code is organized into the following files:
- 
-	●data_processing.py: This file contains code for processing the data from both papers.
-	●beer_flavor_model.py: This file contains code for training and evaluating the beer flavor model.
-	●food_pairing_model.py: This file contains code for training and evaluating the food pairing model.
-	●beer_food_pairing_model.py: This file contains code for combining the beer flavor model and the food pairing model to predict beer-food pairings.
-
-To run the code, you will need to have Python 3.6 or later installed. You will also need to install the following libraries:
-	
- 	●scikit-learn
-	●XGBoost
-	●PyTorch
-
-Once you have installed the required libraries, you can run the code by executing the following command in your terminal:
-	
- 	●python beer_food_pairing_model.py
-
-This will train the models and predict beer-food pairings. The results will be saved to a file called beer_food_pairings.csv.
+Repository Contents
+Data: Contains the datasets used in the project, including the beer chemical data from Schreurs et al. (2024) and the FlavorGraph data from Park et al. (2021).
+Notebooks: Jupyter notebooks detailing the data processing, exploratory data analysis (EDA), vectorization, dimensionality reduction, and model development steps.
+Slides: A presentation summarizing the project's background, methodology, results, and potential applications.
 
 I hope this README is helpful. Please let me know if you have any questions.
+
+
+
