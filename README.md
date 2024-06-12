@@ -1,6 +1,7 @@
 # Lessons in Chemisty and Beer Pairing
 
-Project Overview
+**Project Overview**
+
 This project aims to develop a machine-learning model that can recommend personalized beer and food pairings based on the chemical properties of beers and the flavor profiles of foods. The model leverages insights from two key research papers:
 
 This repository contains the data and code used to predict beer and food pairings. The project is based on two papers:
